@@ -1,14 +1,21 @@
+:root {
+    --padding 10px;
+    --bg: blue;
+    --fg: red;
+}
+
 body {
     display: grid;
     grid-template-columns: 150px 1fr 150px;
-    grid-template-rows: 40px 1fr  50px;
+    grid-template-rows: 40px 1fr 50px;
     margin: 0;
+    gap: 10px;
     background-color: pink;
     min-height: 100vh;
 }
 
 #nav-list {
-display: flex;
+    display: flex;
 gap:10px;
 height: 100%;
 align-items: center;
@@ -42,10 +49,11 @@ nav > ul {
 
 #footer {
 
- grid-row: 3;
- grid-column: 1 / 4;
- background-color: green;
- display: flex;
- padding: 10px;
- justify-content: space-evenly;
+    grid-row: 3;
+    grid-column: 1 / 4;
+    background-color: green;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
 }
+
